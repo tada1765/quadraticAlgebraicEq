@@ -21,3 +21,11 @@ void test_function_pointer(void)
 	
 	TEST_ASSERT_EQUAL_INT(result, num);
 }
+
+void test_fun_function(void)
+{
+	int num =10;
+	int result = fun(num);
+	TEST_ASSERT_EQUAL_INT(result, num);
+	
+}

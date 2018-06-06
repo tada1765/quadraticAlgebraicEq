@@ -9,9 +9,8 @@ int fun(int a)
  
 int trying(int num)
 { 
-    void (*fun_ptr)(int) = fun;  // & removed
+    int (*fun_ptr)(int) = fun;  // & removed
  
-    fun_ptr(&num);  // * removed
+    fun_ptr(num);  // * removed
  
-    return 0;
 }
